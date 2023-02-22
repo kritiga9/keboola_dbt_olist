@@ -1,0 +1,2032 @@
+
+
+============================== 2023-02-22 07:13:34.711424 | e57fbee8-c4b4-4f65-8681-b807f988b999 ==============================
+[0m07:13:34.711424 [info ] [MainThread]: Running with dbt=1.4.1
+[0m07:13:34.712444 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:13:34.712600 [debug] [MainThread]: Tracking: tracking
+[0m07:13:34.754223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fece27716d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fece2771d00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fece27710d0>]}
+[0m07:13:36.630892 [debug] [MainThread]: Executing "git --help"
+[0m07:13:36.644722 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:13:36.645595 [debug] [MainThread]: STDERR: "b''"
+[0m07:13:36.673114 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m07:13:36.675253 [debug] [MainThread]: Using snowflake connection "debug"
+[0m07:13:36.675649 [debug] [MainThread]: On debug: select 1 as id
+[0m07:13:36.675975 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:13:37.679979 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:13:37.683285 [debug] [MainThread]: On debug: Close
+[0m07:13:37.822313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecc0518640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fecc051ff10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fece3fefee0>]}
+[0m07:13:37.822842 [debug] [MainThread]: Flushing usage events
+[0m07:13:38.367510 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-22 07:14:16.262650 | c321fd2f-11a5-470b-bb31-388c0f80e8df ==============================
+[0m07:14:16.262650 [info ] [MainThread]: Running with dbt=1.4.1
+[0m07:14:16.264579 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m07:14:16.264806 [debug] [MainThread]: Tracking: tracking
+[0m07:14:16.265170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48bdf8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48bdf8ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48bdf8bb0>]}
+[0m07:14:16.275953 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:14:16.276352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48be0d5e0>]}
+[0m07:14:16.834707 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_products.sql
+[0m07:14:16.844326 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_orders.sql
+[0m07:14:16.846821 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_order_items.sql
+[0m07:14:16.849040 [debug] [MainThread]: 1699: static parser successfully parsed marts/dim_orders.sql
+[0m07:14:16.851324 [debug] [MainThread]: 1699: static parser successfully parsed marts/dim_products.sql
+[0m07:14:16.853424 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m07:14:17.856526 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m07:14:17.871386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48bed13d0>]}
+[0m07:14:17.965572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48be9d220>]}
+[0m07:14:17.965950 [info ] [MainThread]: Found 6 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m07:14:17.966198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48be9d2b0>]}
+[0m07:14:17.977078 [info ] [MainThread]: 
+[0m07:14:17.978502 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:14:17.979573 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m07:14:17.991194 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m07:14:17.991612 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m07:14:17.991809 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:14:18.746008 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m07:14:18.750582 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m07:14:18.905246 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m07:14:18.911386 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m07:14:18.911594 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m07:14:18.911751 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:14:19.659771 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1 seconds
+[0m07:14:19.663833 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m07:14:19.832550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd478765b20>]}
+[0m07:14:19.833343 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m07:14:19.833593 [info ] [MainThread]: 
+[0m07:14:19.837225 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m07:14:19.837637 [info ] [Thread-1  ]: 1 of 6 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m07:14:19.838528 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m07:14:19.838787 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m07:14:19.843245 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:14:19.844213 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 07:14:19.838975 => 2023-02-22 07:14:19.844129
+[0m07:14:19.844468 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m07:14:19.868598 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:14:19.869688 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m07:14:19.869907 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    order_id as order_fk,
+    order_item_id,
+    product_id as product_fk,
+    seller_id as seller_fk,
+    shipping_limit_date,
+    price,
+    freight_value
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m07:14:19.870078 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:14:20.454559 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7ef2-0101-c314-0000-5d493a1dee3e
+[0m07:14:20.454830 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 5 at position 4
+invalid identifier 'ORDER_ID'
+[0m07:14:20.455323 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 07:14:19.844630 => 2023-02-22 07:14:20.455247
+[0m07:14:20.455549 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m07:14:20.732698 [debug] [Thread-1  ]: Database Error in model stg_order_items (models/staging/stg_order_items.sql)
+  000904 (42000): SQL compilation error: error line 5 at position 4
+  invalid identifier 'ORDER_ID'
+  compiled Code at target/run/keboola_dbt_olist/models/staging/stg_order_items.sql
+[0m07:14:20.733128 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd478765310>]}
+[0m07:14:20.733750 [error] [Thread-1  ]: 1 of 6 ERROR creating sql table model WORKSPACE_35314553.stg_order_items ....... [[31mERROR[0m in 0.89s]
+[0m07:14:20.735202 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m07:14:20.735542 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m07:14:20.736264 [info ] [Thread-1  ]: 2 of 6 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m07:14:20.736931 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m07:14:20.737375 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m07:14:20.740469 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m07:14:20.741040 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 07:14:20.737748 => 2023-02-22 07:14:20.740977
+[0m07:14:20.741296 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m07:14:20.744131 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m07:14:20.745185 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m07:14:20.745508 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    order_id as order_pk,
+    customer_id as customer_fk,
+    order_status,
+    order_purchase_timestamp,
+    order_approved_at,
+    order_delivered_carrier_date,
+    order_delivered_customer_date,
+    order_estimated_delivery_date
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m07:14:20.745699 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:14:21.549497 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7ef2-0101-c314-0000-5d493a1dee42
+[0m07:14:21.550341 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 5 at position 4
+invalid identifier 'ORDER_ID'
+[0m07:14:21.551005 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 07:14:20.741464 => 2023-02-22 07:14:21.550917
+[0m07:14:21.551321 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m07:14:21.826364 [debug] [Thread-1  ]: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  000904 (42000): SQL compilation error: error line 5 at position 4
+  invalid identifier 'ORDER_ID'
+  compiled Code at target/run/keboola_dbt_olist/models/staging/stg_orders.sql
+[0m07:14:21.826886 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd478765310>]}
+[0m07:14:21.827281 [error] [Thread-1  ]: 2 of 6 ERROR creating sql table model WORKSPACE_35314553.stg_orders ............ [[31mERROR[0m in 1.09s]
+[0m07:14:21.827585 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m07:14:21.827828 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m07:14:21.828057 [info ] [Thread-1  ]: 3 of 6 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m07:14:21.828627 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m07:14:21.829015 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m07:14:21.832786 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m07:14:21.833345 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 07:14:21.829161 => 2023-02-22 07:14:21.833297
+[0m07:14:21.833558 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m07:14:21.836335 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m07:14:21.837627 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m07:14:21.837974 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    product_id as product_pk,
+    product_category_name,
+    product_name_lenght,
+    product_description_lenght,
+    product_photos_qty,
+    product_weight_g,
+    product_length_cm,
+    product_height_cm,
+    product_width_cm
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m07:14:21.838172 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:14:22.524000 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7ef2-0101-c314-0000-5d493a1dee46
+[0m07:14:22.525349 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 5 at position 4
+invalid identifier 'PRODUCT_ID'
+[0m07:14:22.526320 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 07:14:21.833695 => 2023-02-22 07:14:22.526120
+[0m07:14:22.526911 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m07:14:22.673348 [debug] [Thread-1  ]: Database Error in model stg_products (models/staging/stg_products.sql)
+  000904 (42000): SQL compilation error: error line 5 at position 4
+  invalid identifier 'PRODUCT_ID'
+  compiled Code at target/run/keboola_dbt_olist/models/staging/stg_products.sql
+[0m07:14:22.674086 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c321fd2f-11a5-470b-bb31-388c0f80e8df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48c417940>]}
+[0m07:14:22.674566 [error] [Thread-1  ]: 3 of 6 ERROR creating sql table model WORKSPACE_35314553.stg_products .......... [[31mERROR[0m in 0.85s]
+[0m07:14:22.674884 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m07:14:22.675161 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m07:14:22.675449 [info ] [Thread-1  ]: 4 of 6 SKIP relation WORKSPACE_35314553.fct_orders ............................. [[33mSKIP[0m]
+[0m07:14:22.676063 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m07:14:22.676523 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m07:14:22.676852 [info ] [Thread-1  ]: 5 of 6 SKIP relation WORKSPACE_35314553.dim_orders ............................. [[33mSKIP[0m]
+[0m07:14:22.677165 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m07:14:22.677431 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m07:14:22.677716 [info ] [Thread-1  ]: 6 of 6 SKIP relation WORKSPACE_35314553.dim_products ........................... [[33mSKIP[0m]
+[0m07:14:22.678183 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m07:14:22.680055 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:14:22.680706 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:14:22.680880 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.stg_products' was properly closed.
+[0m07:14:22.681011 [debug] [MainThread]: Connection 'list_KEBOOLA_7167_WORKSPACE_35314553' was properly closed.
+[0m07:14:22.681271 [info ] [MainThread]: 
+[0m07:14:22.681576 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 4.70 seconds (4.70s).
+[0m07:14:22.682015 [debug] [MainThread]: Command end result
+[0m07:14:22.715084 [info ] [MainThread]: 
+[0m07:14:22.715516 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m07:14:22.715794 [info ] [MainThread]: 
+[0m07:14:22.716077 [error] [MainThread]: [33mDatabase Error in model stg_order_items (models/staging/stg_order_items.sql)[0m
+[0m07:14:22.716337 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 5 at position 4
+[0m07:14:22.716580 [error] [MainThread]:   invalid identifier 'ORDER_ID'
+[0m07:14:22.716816 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/staging/stg_order_items.sql
+[0m07:14:22.717024 [info ] [MainThread]: 
+[0m07:14:22.717280 [error] [MainThread]: [33mDatabase Error in model stg_orders (models/staging/stg_orders.sql)[0m
+[0m07:14:22.717530 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 5 at position 4
+[0m07:14:22.717782 [error] [MainThread]:   invalid identifier 'ORDER_ID'
+[0m07:14:22.717980 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/staging/stg_orders.sql
+[0m07:14:22.718176 [info ] [MainThread]: 
+[0m07:14:22.718383 [error] [MainThread]: [33mDatabase Error in model stg_products (models/staging/stg_products.sql)[0m
+[0m07:14:22.718625 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 5 at position 4
+[0m07:14:22.718858 [error] [MainThread]:   invalid identifier 'PRODUCT_ID'
+[0m07:14:22.719095 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/staging/stg_products.sql
+[0m07:14:22.719357 [info ] [MainThread]: 
+[0m07:14:22.719642 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=3 TOTAL=6
+[0m07:14:22.720465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48be9d190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd48b7574f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4686db580>]}
+[0m07:14:22.720762 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 07:17:37.800018 | bbf74f67-fc87-4a73-9ac0-f0838341b0ff ==============================
+[0m07:17:37.800018 [info ] [MainThread]: Running with dbt=1.4.1
+[0m07:17:37.802054 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m07:17:37.802280 [debug] [MainThread]: Tracking: tracking
+[0m07:17:37.802651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0841e8100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0841e8ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0841e8bb0>]}
+[0m07:17:37.941632 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m07:17:37.942958 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/marts/fct_orders.sql
+[0m07:17:37.943205 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/staging/stg_products.sql
+[0m07:17:37.943423 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/staging/stg_order_items.sql
+[0m07:17:37.943636 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/staging/stg_orders.sql
+[0m07:17:37.955779 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m07:17:37.965343 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_products.sql
+[0m07:17:37.967530 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_order_items.sql
+[0m07:17:37.969655 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_orders.sql
+[0m07:17:38.018588 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m07:17:38.032257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0608760d0>]}
+[0m07:17:38.125656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0501eb340>]}
+[0m07:17:38.126051 [info ] [MainThread]: Found 6 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m07:17:38.126294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0501eb610>]}
+[0m07:17:38.137973 [info ] [MainThread]: 
+[0m07:17:38.139602 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:17:38.140659 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m07:17:38.151696 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m07:17:38.152141 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m07:17:38.152354 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:17:38.932290 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m07:17:38.937321 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m07:17:39.105592 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m07:17:39.110753 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m07:17:39.110948 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m07:17:39.111107 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:17:40.051657 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1 seconds
+[0m07:17:40.054988 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m07:17:40.208106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd084392cd0>]}
+[0m07:17:40.208822 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m07:17:40.209123 [info ] [MainThread]: 
+[0m07:17:40.214151 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m07:17:40.214601 [info ] [Thread-1  ]: 1 of 6 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m07:17:40.215542 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m07:17:40.215758 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m07:17:40.218301 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:17:40.219115 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 07:17:40.215927 => 2023-02-22 07:17:40.219036
+[0m07:17:40.219374 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m07:17:40.248280 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:17:40.249196 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m07:17:40.249405 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m07:17:40.249671 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:42.101568 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m07:17:42.126142 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 07:17:40.219529 => 2023-02-22 07:17:42.126077
+[0m07:17:42.126471 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m07:17:42.271257 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0704ceb80>]}
+[0m07:17:42.271991 [info ] [Thread-1  ]: 1 of 6 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 2.06s]
+[0m07:17:42.273137 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m07:17:42.273402 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m07:17:42.273616 [info ] [Thread-1  ]: 2 of 6 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m07:17:42.274634 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m07:17:42.274913 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m07:17:42.277478 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m07:17:42.277962 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 07:17:42.275086 => 2023-02-22 07:17:42.277916
+[0m07:17:42.278155 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m07:17:42.280750 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m07:17:42.281634 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m07:17:42.281797 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m07:17:42.281956 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:45.379216 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3 seconds
+[0m07:17:45.384199 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 07:17:42.278283 => 2023-02-22 07:17:45.384130
+[0m07:17:45.384505 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m07:17:45.519500 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd08443ffd0>]}
+[0m07:17:45.520129 [info ] [Thread-1  ]: 2 of 6 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 3.25s]
+[0m07:17:45.520473 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m07:17:45.520754 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m07:17:45.520989 [info ] [Thread-1  ]: 3 of 6 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m07:17:45.521586 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m07:17:45.521871 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m07:17:45.524583 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m07:17:45.525200 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 07:17:45.522016 => 2023-02-22 07:17:45.525145
+[0m07:17:45.525432 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m07:17:45.527738 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m07:17:45.528643 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m07:17:45.528832 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m07:17:45.529022 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:47.132673 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m07:17:47.138683 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 07:17:45.525567 => 2023-02-22 07:17:47.138604
+[0m07:17:47.139046 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m07:17:47.287869 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd084401700>]}
+[0m07:17:47.288574 [info ] [Thread-1  ]: 3 of 6 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.77s]
+[0m07:17:47.288973 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m07:17:47.289241 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m07:17:47.289691 [info ] [Thread-1  ]: 4 of 6 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m07:17:47.290154 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m07:17:47.290390 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m07:17:47.293665 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m07:17:47.294454 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 07:17:47.290639 => 2023-02-22 07:17:47.294389
+[0m07:17:47.294720 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m07:17:47.312980 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m07:17:47.314200 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m07:17:47.314355 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantitie",
+        "price" * "product_quantity" as "order_value_without_freight",
+        ("price" * "product_quantity") + "order_freight_value" as "order_value_with_freight"
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m07:17:47.314500 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:48.392155 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7ef5-0101-c314-0000-5d493a1e0cfa
+[0m07:17:48.392474 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 31 at position 8
+invalid identifier '"product_quantitie"'
+[0m07:17:48.392930 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 07:17:47.294865 => 2023-02-22 07:17:48.392883
+[0m07:17:48.393113 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m07:17:48.627237 [debug] [Thread-1  ]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 31 at position 8
+  invalid identifier '"product_quantitie"'
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m07:17:48.627794 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd02001f3a0>]}
+[0m07:17:48.628181 [error] [Thread-1  ]: 4 of 6 ERROR creating sql view model WORKSPACE_35314553.fct_orders ............. [[31mERROR[0m in 1.34s]
+[0m07:17:48.628494 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m07:17:48.628754 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m07:17:48.629126 [info ] [Thread-1  ]: 5 of 6 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m07:17:48.629658 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m07:17:48.629846 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m07:17:48.632163 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m07:17:48.632750 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 07:17:48.629975 => 2023-02-22 07:17:48.632682
+[0m07:17:48.632977 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m07:17:48.635715 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m07:17:48.636737 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m07:17:48.636936 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m07:17:48.637110 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:49.460329 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:17:49.465352 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 07:17:48.633122 => 2023-02-22 07:17:49.465289
+[0m07:17:49.465644 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m07:17:49.615327 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0843fc340>]}
+[0m07:17:49.615964 [info ] [Thread-1  ]: 5 of 6 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.99s]
+[0m07:17:49.616295 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m07:17:49.616563 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m07:17:49.616885 [info ] [Thread-1  ]: 6 of 6 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m07:17:49.617415 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m07:17:49.617599 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m07:17:49.620104 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m07:17:49.620718 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 07:17:49.617726 => 2023-02-22 07:17:49.620668
+[0m07:17:49.620915 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m07:17:49.623549 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m07:17:49.624572 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m07:17:49.624742 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m07:17:49.624908 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:17:50.704968 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:17:50.709901 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 07:17:49.621042 => 2023-02-22 07:17:50.709836
+[0m07:17:50.710210 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m07:17:50.876717 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bbf74f67-fc87-4a73-9ac0-f0838341b0ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0843fc340>]}
+[0m07:17:50.877338 [info ] [Thread-1  ]: 6 of 6 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 1.26s]
+[0m07:17:50.877664 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m07:17:50.880275 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:17:50.880796 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:17:50.880944 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m07:17:50.881156 [info ] [MainThread]: 
+[0m07:17:50.881413 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 12.74 seconds (12.74s).
+[0m07:17:50.881872 [debug] [MainThread]: Command end result
+[0m07:17:50.910579 [info ] [MainThread]: 
+[0m07:17:50.910958 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:17:50.911188 [info ] [MainThread]: 
+[0m07:17:50.911405 [error] [MainThread]: [33mDatabase Error in model fct_orders (models/marts/fct_orders.sql)[0m
+[0m07:17:50.911611 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 31 at position 8
+[0m07:17:50.911810 [error] [MainThread]:   invalid identifier '"product_quantitie"'
+[0m07:17:50.912011 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m07:17:50.912216 [info ] [MainThread]: 
+[0m07:17:50.912433 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m07:17:50.912785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0501eb430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd02002ba60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd02002b190>]}
+[0m07:17:50.913038 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 07:18:14.707717 | 6ee8d853-b1e9-4b95-94ef-89f5888267c7 ==============================
+[0m07:18:14.707717 [info ] [MainThread]: Running with dbt=1.4.1
+[0m07:18:14.709576 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m07:18:14.709786 [debug] [MainThread]: Tracking: tracking
+[0m07:18:14.710142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c096f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c096fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c096fbb0>]}
+[0m07:18:14.846739 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:18:14.848036 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/marts/fct_orders.sql
+[0m07:18:14.860299 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m07:18:14.901170 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m07:18:14.914081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d3d029a0>]}
+[0m07:18:14.968071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d3b2ce80>]}
+[0m07:18:14.968524 [info ] [MainThread]: Found 6 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m07:18:14.968781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d3bfe2b0>]}
+[0m07:18:15.028141 [info ] [MainThread]: 
+[0m07:18:15.029629 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:18:15.030801 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m07:18:15.048329 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m07:18:15.048806 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m07:18:15.049165 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:18:15.836573 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m07:18:15.840724 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m07:18:15.989163 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m07:18:15.994828 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m07:18:15.995027 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m07:18:15.995187 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m07:18:16.558765 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1 seconds
+[0m07:18:16.563813 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m07:18:16.723705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0a040fc70>]}
+[0m07:18:16.725297 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m07:18:16.725655 [info ] [MainThread]: 
+[0m07:18:16.730061 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m07:18:16.730543 [info ] [Thread-1  ]: 1 of 6 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m07:18:16.731198 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m07:18:16.731431 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m07:18:16.735029 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:18:16.735958 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 07:18:16.731607 => 2023-02-22 07:18:16.735856
+[0m07:18:16.736262 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m07:18:16.761248 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m07:18:16.762042 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m07:18:16.762214 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m07:18:16.762383 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:18.574237 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m07:18:18.596599 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 07:18:16.736434 => 2023-02-22 07:18:18.596549
+[0m07:18:18.596862 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m07:18:18.756534 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c0be8640>]}
+[0m07:18:18.757341 [info ] [Thread-1  ]: 1 of 6 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 2.03s]
+[0m07:18:18.758687 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m07:18:18.759017 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m07:18:18.759573 [info ] [Thread-1  ]: 2 of 6 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m07:18:18.760237 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m07:18:18.760462 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m07:18:18.763212 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m07:18:18.763771 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 07:18:18.760609 => 2023-02-22 07:18:18.763717
+[0m07:18:18.763975 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m07:18:18.766587 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m07:18:18.768007 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m07:18:18.768381 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m07:18:18.768561 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:21.815116 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3 seconds
+[0m07:18:21.821526 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 07:18:18.764107 => 2023-02-22 07:18:21.821482
+[0m07:18:21.821803 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m07:18:22.015859 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c0be8b20>]}
+[0m07:18:22.016581 [info ] [Thread-1  ]: 2 of 6 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 3.26s]
+[0m07:18:22.017043 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m07:18:22.017437 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m07:18:22.017960 [info ] [Thread-1  ]: 3 of 6 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m07:18:22.018708 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m07:18:22.018985 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m07:18:22.022122 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m07:18:22.022627 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 07:18:22.019165 => 2023-02-22 07:18:22.022570
+[0m07:18:22.022879 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m07:18:22.025602 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m07:18:22.026514 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m07:18:22.026755 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m07:18:22.026934 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:23.238309 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:18:23.244034 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 07:18:22.023051 => 2023-02-22 07:18:23.243928
+[0m07:18:23.244317 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m07:18:23.397897 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0c0be8d90>]}
+[0m07:18:23.399956 [info ] [Thread-1  ]: 3 of 6 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.38s]
+[0m07:18:23.400395 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m07:18:23.400769 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m07:18:23.401034 [info ] [Thread-1  ]: 4 of 6 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m07:18:23.402519 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m07:18:23.402851 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m07:18:23.410780 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m07:18:23.411436 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 07:18:23.403191 => 2023-02-22 07:18:23.411371
+[0m07:18:23.411688 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m07:18:23.430014 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m07:18:23.431206 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m07:18:23.431374 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantitiy",
+        "price" * "product_quantity" as "order_value_without_freight",
+        ("price" * "product_quantity") + "order_freight_value" as "order_value_with_freight"
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m07:18:23.431528 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:24.012765 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7ef6-0101-c314-0000-5d493a1e2042
+[0m07:18:24.013237 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 31 at position 8
+invalid identifier '"product_quantitiy"'
+[0m07:18:24.013734 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 07:18:23.411826 => 2023-02-22 07:18:24.013659
+[0m07:18:24.014147 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m07:18:24.159712 [debug] [Thread-1  ]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 31 at position 8
+  invalid identifier '"product_quantitiy"'
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m07:18:24.160177 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b09fa490>]}
+[0m07:18:24.160561 [error] [Thread-1  ]: 4 of 6 ERROR creating sql view model WORKSPACE_35314553.fct_orders ............. [[31mERROR[0m in 0.76s]
+[0m07:18:24.160861 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m07:18:24.161126 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m07:18:24.161621 [info ] [Thread-1  ]: 5 of 6 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m07:18:24.162373 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m07:18:24.162598 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m07:18:24.165160 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m07:18:24.165696 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 07:18:24.162761 => 2023-02-22 07:18:24.165647
+[0m07:18:24.165898 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m07:18:24.168693 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m07:18:24.169474 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m07:18:24.169686 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m07:18:24.169873 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:24.799670 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:18:24.804922 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 07:18:24.166058 => 2023-02-22 07:18:24.804857
+[0m07:18:24.805195 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m07:18:24.943017 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b09fae20>]}
+[0m07:18:24.944278 [info ] [Thread-1  ]: 5 of 6 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.78s]
+[0m07:18:24.944715 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m07:18:24.945001 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m07:18:24.945296 [info ] [Thread-1  ]: 6 of 6 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m07:18:24.945944 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m07:18:24.946228 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m07:18:24.948772 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m07:18:24.949352 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 07:18:24.946405 => 2023-02-22 07:18:24.949301
+[0m07:18:24.949559 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m07:18:24.952792 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m07:18:24.953850 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m07:18:24.954146 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m07:18:24.954421 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m07:18:25.683458 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m07:18:25.689394 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 07:18:24.949688 => 2023-02-22 07:18:25.689333
+[0m07:18:25.689690 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m07:18:25.838641 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6ee8d853-b1e9-4b95-94ef-89f5888267c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b09fa580>]}
+[0m07:18:25.839934 [info ] [Thread-1  ]: 6 of 6 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 0.89s]
+[0m07:18:25.840750 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m07:18:25.842643 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m07:18:25.843517 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:18:25.843701 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m07:18:25.843924 [info ] [MainThread]: 
+[0m07:18:25.844216 [info ] [MainThread]: Finished running 3 table models, 3 view models in 0 hours 0 minutes and 10.82 seconds (10.82s).
+[0m07:18:25.844712 [debug] [MainThread]: Command end result
+[0m07:18:25.877479 [info ] [MainThread]: 
+[0m07:18:25.877838 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m07:18:25.878064 [info ] [MainThread]: 
+[0m07:18:25.878285 [error] [MainThread]: [33mDatabase Error in model fct_orders (models/marts/fct_orders.sql)[0m
+[0m07:18:25.878495 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 31 at position 8
+[0m07:18:25.878686 [error] [MainThread]:   invalid identifier '"product_quantitiy"'
+[0m07:18:25.878870 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m07:18:25.879066 [info ] [MainThread]: 
+[0m07:18:25.879272 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=0 TOTAL=6
+[0m07:18:25.879587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d3b27f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b0a00b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0b0a002e0>]}
+[0m07:18:25.879805 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 08:03:07.999026 | 6a5bc124-ee4d-4352-8ce8-805c79428ce4 ==============================
+[0m08:03:07.999026 [info ] [MainThread]: Running with dbt=1.4.1
+[0m08:03:08.003272 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:03:08.003708 [debug] [MainThread]: Tracking: tracking
+[0m08:03:08.004316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa560277100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa560277ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa560277bb0>]}
+[0m08:03:08.183759 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m08:03:08.185480 [debug] [MainThread]: Partial parsing: added file: keboola_dbt_olist://models/staging/stg_sellers.sql
+[0m08:03:08.185723 [debug] [MainThread]: Partial parsing: added file: keboola_dbt_olist://models/marts/fct_seller.sql
+[0m08:03:08.205119 [debug] [MainThread]: 1699: static parser successfully parsed staging/stg_sellers.sql
+[0m08:03:08.217615 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_seller.sql
+[0m08:03:08.252262 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m08:03:08.266684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5605210d0>]}
+[0m08:03:08.325920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570710ee0>]}
+[0m08:03:08.326330 [info ] [MainThread]: Found 8 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m08:03:08.326575 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570710ac0>]}
+[0m08:03:08.338016 [info ] [MainThread]: 
+[0m08:03:08.339604 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:03:08.340756 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m08:03:08.351289 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m08:03:08.351587 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m08:03:08.351760 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:03:09.248930 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m08:03:09.253483 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m08:03:09.397480 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m08:03:09.402948 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m08:03:09.403238 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m08:03:09.403412 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:03:09.929555 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1 seconds
+[0m08:03:09.935527 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m08:03:10.117592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa57068bb50>]}
+[0m08:03:10.118736 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m08:03:10.119037 [info ] [MainThread]: 
+[0m08:03:10.134317 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_seller
+[0m08:03:10.134890 [info ] [Thread-1  ]: 1 of 8 START sql view model WORKSPACE_35314553.fct_seller ...................... [RUN]
+[0m08:03:10.135533 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_seller'
+[0m08:03:10.135796 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_seller
+[0m08:03:10.137857 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_seller"
+[0m08:03:10.138840 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (compile): 2023-02-22 08:03:10.136090 => 2023-02-22 08:03:10.138723
+[0m08:03:10.139105 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_seller
+[0m08:03:10.165888 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_seller"
+[0m08:03:10.167000 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_seller"
+[0m08:03:10.167244 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_seller"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_seller
+  
+   as (
+    #number of orders per seller?
+  );
+[0m08:03:10.167559 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:10.789610 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f23-0101-c314-0000-5d493a1f0ae6
+[0m08:03:10.789918 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 4 at position 4 unexpected '#n'.
+[0m08:03:10.790427 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (execute): 2023-02-22 08:03:10.139254 => 2023-02-22 08:03:10.790371
+[0m08:03:10.790636 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: Close
+[0m08:03:10.922721 [debug] [Thread-1  ]: Database Error in model fct_seller (models/marts/fct_seller.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected '#n'.
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:03:10.923635 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570755f70>]}
+[0m08:03:10.924304 [error] [Thread-1  ]: 1 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_seller ............. [[31mERROR[0m in 0.79s]
+[0m08:03:10.925795 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_seller
+[0m08:03:10.926167 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m08:03:10.926849 [info ] [Thread-1  ]: 2 of 8 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m08:03:10.927539 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m08:03:10.927750 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m08:03:10.930930 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:03:10.931819 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 08:03:10.927905 => 2023-02-22 08:03:10.931754
+[0m08:03:10.932075 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m08:03:10.949776 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:03:10.950559 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m08:03:10.950715 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m08:03:10.950856 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:12.751747 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:03:12.774906 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 08:03:10.932214 => 2023-02-22 08:03:12.774845
+[0m08:03:12.775192 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m08:03:13.136118 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa594236c40>]}
+[0m08:03:13.136894 [info ] [Thread-1  ]: 2 of 8 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 2.21s]
+[0m08:03:13.137214 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m08:03:13.137506 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m08:03:13.137781 [info ] [Thread-1  ]: 3 of 8 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m08:03:13.138832 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m08:03:13.139118 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m08:03:13.142909 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m08:03:13.143996 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 08:03:13.139296 => 2023-02-22 08:03:13.143932
+[0m08:03:13.144232 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m08:03:13.146516 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m08:03:13.147746 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m08:03:13.147996 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m08:03:13.148184 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:15.806929 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3 seconds
+[0m08:03:15.813428 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 08:03:13.144365 => 2023-02-22 08:03:15.813321
+[0m08:03:15.813872 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m08:03:15.960620 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5708dbfa0>]}
+[0m08:03:15.961196 [info ] [Thread-1  ]: 3 of 8 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 2.82s]
+[0m08:03:15.961547 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m08:03:15.961866 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m08:03:15.962572 [info ] [Thread-1  ]: 4 of 8 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m08:03:15.963167 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m08:03:15.963398 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m08:03:15.966607 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m08:03:15.967100 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 08:03:15.963545 => 2023-02-22 08:03:15.967051
+[0m08:03:15.967301 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m08:03:15.969601 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m08:03:15.970457 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m08:03:15.970683 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m08:03:15.970861 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:17.428145 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:03:17.435660 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 08:03:15.967437 => 2023-02-22 08:03:17.435588
+[0m08:03:17.435978 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m08:03:17.593343 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa59414f040>]}
+[0m08:03:17.594039 [info ] [Thread-1  ]: 4 of 8 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.63s]
+[0m08:03:17.594444 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m08:03:17.594864 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_sellers
+[0m08:03:17.595358 [info ] [Thread-1  ]: 5 of 8 START sql table model WORKSPACE_35314553.stg_sellers .................... [RUN]
+[0m08:03:17.595908 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_sellers'
+[0m08:03:17.596125 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_sellers
+[0m08:03:17.598889 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:03:17.599508 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (compile): 2023-02-22 08:03:17.596283 => 2023-02-22 08:03:17.599443
+[0m08:03:17.599723 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_sellers
+[0m08:03:17.602159 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:03:17.603227 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_sellers"
+[0m08:03:17.603467 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_sellers"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_sellers  as
+        (
+
+select
+    "seller_id" as "seller_fk",
+    "seller_city",
+    "seller_state" 
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_sellers_dataset"
+        );
+[0m08:03:17.603651 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:19.017571 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:03:19.024324 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (execute): 2023-02-22 08:03:17.599863 => 2023-02-22 08:03:19.024251
+[0m08:03:19.024694 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: Close
+[0m08:03:19.179195 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570753fa0>]}
+[0m08:03:19.179676 [info ] [Thread-1  ]: 5 of 8 OK created sql table model WORKSPACE_35314553.stg_sellers ............... [[32mSUCCESS 1[0m in 1.58s]
+[0m08:03:19.179976 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_sellers
+[0m08:03:19.180249 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m08:03:19.180562 [info ] [Thread-1  ]: 6 of 8 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m08:03:19.181063 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m08:03:19.181312 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m08:03:19.183860 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m08:03:19.184633 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 08:03:19.181475 => 2023-02-22 08:03:19.184577
+[0m08:03:19.184872 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m08:03:19.188059 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m08:03:19.189524 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m08:03:19.189761 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantitiy",
+        "price" * "product_quantity" as "order_value_without_freight",
+        ("price" * "product_quantity") + "order_freight_value" as "order_value_with_freight"
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m08:03:19.189925 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:19.951066 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f23-0101-c319-0000-5d493a1efed6
+[0m08:03:19.952190 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 31 at position 8
+invalid identifier '"product_quantitiy"'
+[0m08:03:19.952693 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 08:03:19.185020 => 2023-02-22 08:03:19.952623
+[0m08:03:19.952882 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m08:03:20.100865 [debug] [Thread-1  ]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 31 at position 8
+  invalid identifier '"product_quantitiy"'
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:03:20.101685 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa59434af70>]}
+[0m08:03:20.102124 [error] [Thread-1  ]: 6 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_orders ............. [[31mERROR[0m in 0.92s]
+[0m08:03:20.102422 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m08:03:20.102684 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m08:03:20.103333 [info ] [Thread-1  ]: 7 of 8 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m08:03:20.104512 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m08:03:20.104783 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m08:03:20.107462 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m08:03:20.107963 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 08:03:20.104964 => 2023-02-22 08:03:20.107920
+[0m08:03:20.108151 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m08:03:20.110564 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m08:03:20.111398 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m08:03:20.111591 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m08:03:20.111769 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:20.732495 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:03:20.738992 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 08:03:20.108282 => 2023-02-22 08:03:20.738864
+[0m08:03:20.739351 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m08:03:20.873918 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5943431c0>]}
+[0m08:03:20.875201 [info ] [Thread-1  ]: 7 of 8 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.77s]
+[0m08:03:20.875610 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m08:03:20.875923 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m08:03:20.876331 [info ] [Thread-1  ]: 8 of 8 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m08:03:20.876875 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m08:03:20.877178 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m08:03:20.880101 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m08:03:20.880584 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 08:03:20.877407 => 2023-02-22 08:03:20.880539
+[0m08:03:20.880774 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m08:03:20.884003 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m08:03:20.885005 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m08:03:20.885293 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m08:03:20.885501 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:03:21.469103 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:03:21.474525 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 08:03:20.880908 => 2023-02-22 08:03:21.474468
+[0m08:03:21.474875 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m08:03:21.618643 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a5bc124-ee4d-4352-8ce8-805c79428ce4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570755250>]}
+[0m08:03:21.619741 [info ] [Thread-1  ]: 8 of 8 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 0.74s]
+[0m08:03:21.620563 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m08:03:21.624370 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:03:21.626343 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:03:21.626560 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m08:03:21.626885 [info ] [MainThread]: 
+[0m08:03:21.627628 [info ] [MainThread]: Finished running 4 view models, 4 table models in 0 hours 0 minutes and 13.29 seconds (13.29s).
+[0m08:03:21.628705 [debug] [MainThread]: Command end result
+[0m08:03:21.669586 [info ] [MainThread]: 
+[0m08:03:21.670046 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m08:03:21.670281 [info ] [MainThread]: 
+[0m08:03:21.670512 [error] [MainThread]: [33mDatabase Error in model fct_seller (models/marts/fct_seller.sql)[0m
+[0m08:03:21.670724 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:03:21.671016 [error] [MainThread]:   syntax error line 4 at position 4 unexpected '#n'.
+[0m08:03:21.671276 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:03:21.671503 [info ] [MainThread]: 
+[0m08:03:21.671729 [error] [MainThread]: [33mDatabase Error in model fct_orders (models/marts/fct_orders.sql)[0m
+[0m08:03:21.672212 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 31 at position 8
+[0m08:03:21.672456 [error] [MainThread]:   invalid identifier '"product_quantitiy"'
+[0m08:03:21.672680 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:03:21.672957 [info ] [MainThread]: 
+[0m08:03:21.673235 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=2 SKIP=0 TOTAL=8
+[0m08:03:21.673657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570710d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5604dc280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa570757a90>]}
+[0m08:03:21.673903 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 08:04:09.479818 | 7f03ab47-c3e2-4634-8480-facc37a7e48a ==============================
+[0m08:04:09.479818 [info ] [MainThread]: Running with dbt=1.4.1
+[0m08:04:09.481731 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:04:09.481960 [debug] [MainThread]: Tracking: tracking
+[0m08:04:09.482381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3c1f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3c1fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3c1fbb0>]}
+[0m08:04:09.620905 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:04:09.622375 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/marts/fct_orders.sql
+[0m08:04:09.634542 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m08:04:09.676118 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m08:04:09.689476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3dab0d0>]}
+[0m08:04:09.808633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde84d4f70>]}
+[0m08:04:09.809061 [info ] [MainThread]: Found 8 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m08:04:09.809301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3cfb580>]}
+[0m08:04:09.820581 [info ] [MainThread]: 
+[0m08:04:09.822281 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:04:09.823749 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m08:04:09.834267 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m08:04:09.834535 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m08:04:09.834706 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:04:10.760951 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m08:04:10.765717 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m08:04:10.910935 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m08:04:10.916173 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m08:04:10.916402 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m08:04:10.916569 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:04:11.550381 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m08:04:11.551741 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m08:04:11.677578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0a6aeb0>]}
+[0m08:04:11.678414 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m08:04:11.678683 [info ] [MainThread]: 
+[0m08:04:11.683656 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_seller
+[0m08:04:11.684081 [info ] [Thread-1  ]: 1 of 8 START sql view model WORKSPACE_35314553.fct_seller ...................... [RUN]
+[0m08:04:11.684711 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_seller'
+[0m08:04:11.684960 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_seller
+[0m08:04:11.686199 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_seller"
+[0m08:04:11.686828 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (compile): 2023-02-22 08:04:11.685103 => 2023-02-22 08:04:11.686693
+[0m08:04:11.687123 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_seller
+[0m08:04:11.714171 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_seller"
+[0m08:04:11.715223 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_seller"
+[0m08:04:11.715705 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_seller"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_seller
+  
+   as (
+    #number of orders per seller?
+  );
+[0m08:04:11.716020 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:12.240536 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f24-0101-c319-0000-5d493a1f142e
+[0m08:04:12.240835 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 4 at position 4 unexpected '#n'.
+[0m08:04:12.241397 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (execute): 2023-02-22 08:04:11.687297 => 2023-02-22 08:04:12.241305
+[0m08:04:12.241636 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: Close
+[0m08:04:12.397702 [debug] [Thread-1  ]: Database Error in model fct_seller (models/marts/fct_seller.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected '#n'.
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:04:12.398305 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0c2ed60>]}
+[0m08:04:12.399141 [error] [Thread-1  ]: 1 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_seller ............. [[31mERROR[0m in 0.71s]
+[0m08:04:12.401111 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_seller
+[0m08:04:12.401455 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m08:04:12.402018 [info ] [Thread-1  ]: 2 of 8 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m08:04:12.402652 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m08:04:12.402952 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m08:04:12.407237 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:12.408105 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 08:04:12.403101 => 2023-02-22 08:04:12.408007
+[0m08:04:12.408426 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m08:04:12.427340 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:12.428351 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:12.428540 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m08:04:12.428708 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:14.143124 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:04:14.165755 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 08:04:12.408605 => 2023-02-22 08:04:14.165689
+[0m08:04:14.166005 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m08:04:14.306546 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddf3f134f0>]}
+[0m08:04:14.307101 [info ] [Thread-1  ]: 2 of 8 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 1.90s]
+[0m08:04:14.307422 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m08:04:14.307690 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m08:04:14.308127 [info ] [Thread-1  ]: 3 of 8 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m08:04:14.309006 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m08:04:14.309248 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m08:04:14.311877 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m08:04:14.312593 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 08:04:14.309413 => 2023-02-22 08:04:14.312537
+[0m08:04:14.312850 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m08:04:14.315454 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m08:04:14.316282 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m08:04:14.316490 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m08:04:14.316678 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:16.730189 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:04:16.735560 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 08:04:14.313022 => 2023-02-22 08:04:16.735451
+[0m08:04:16.736198 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m08:04:16.890153 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0c2e5b0>]}
+[0m08:04:16.890658 [info ] [Thread-1  ]: 3 of 8 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 2.58s]
+[0m08:04:16.890978 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m08:04:16.891247 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m08:04:16.891635 [info ] [Thread-1  ]: 4 of 8 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m08:04:16.892153 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m08:04:16.892344 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m08:04:16.895101 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m08:04:16.895635 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 08:04:16.892480 => 2023-02-22 08:04:16.895585
+[0m08:04:16.895842 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m08:04:16.898132 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m08:04:16.898993 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m08:04:16.899190 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m08:04:16.899357 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:18.202678 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:18.208892 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 08:04:16.895976 => 2023-02-22 08:04:18.208837
+[0m08:04:18.209177 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m08:04:18.361211 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0c2edf0>]}
+[0m08:04:18.362428 [info ] [Thread-1  ]: 4 of 8 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.47s]
+[0m08:04:18.363305 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m08:04:18.364044 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_sellers
+[0m08:04:18.364355 [info ] [Thread-1  ]: 5 of 8 START sql table model WORKSPACE_35314553.stg_sellers .................... [RUN]
+[0m08:04:18.365119 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_sellers'
+[0m08:04:18.365353 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_sellers
+[0m08:04:18.368843 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:18.369423 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (compile): 2023-02-22 08:04:18.365492 => 2023-02-22 08:04:18.369374
+[0m08:04:18.369634 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_sellers
+[0m08:04:18.372164 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:18.373167 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:18.373409 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_sellers"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_sellers  as
+        (
+
+select
+    "seller_id" as "seller_fk",
+    "seller_city",
+    "seller_state" 
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_sellers_dataset"
+        );
+[0m08:04:18.373569 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:19.423834 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:19.429253 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (execute): 2023-02-22 08:04:18.369772 => 2023-02-22 08:04:19.429198
+[0m08:04:19.429546 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: Close
+[0m08:04:19.561662 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde009f3cd0>]}
+[0m08:04:19.562288 [info ] [Thread-1  ]: 5 of 8 OK created sql table model WORKSPACE_35314553.stg_sellers ............... [[32mSUCCESS 1[0m in 1.20s]
+[0m08:04:19.562665 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_sellers
+[0m08:04:19.562935 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m08:04:19.563372 [info ] [Thread-1  ]: 6 of 8 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m08:04:19.563999 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m08:04:19.564243 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m08:04:19.567199 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m08:04:19.567922 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 08:04:19.564420 => 2023-02-22 08:04:19.567882
+[0m08:04:19.568104 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m08:04:19.570550 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m08:04:19.572014 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m08:04:19.572270 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantitiy",
+
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m08:04:19.572471 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:20.083136 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f24-0101-c314-0000-5d493a1f21be
+[0m08:04:20.084345 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 33 at position 4 unexpected 'from'.
+[0m08:04:20.085406 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 08:04:19.568230 => 2023-02-22 08:04:20.085229
+[0m08:04:20.085967 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m08:04:20.210870 [debug] [Thread-1  ]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 33 at position 4 unexpected 'from'.
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:04:20.211416 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde009ceeb0>]}
+[0m08:04:20.211797 [error] [Thread-1  ]: 6 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_orders ............. [[31mERROR[0m in 0.65s]
+[0m08:04:20.212099 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m08:04:20.212409 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m08:04:20.212876 [info ] [Thread-1  ]: 7 of 8 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m08:04:20.213590 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m08:04:20.213821 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m08:04:20.216088 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m08:04:20.217079 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 08:04:20.213958 => 2023-02-22 08:04:20.217007
+[0m08:04:20.217386 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m08:04:20.220486 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m08:04:20.221574 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m08:04:20.221822 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m08:04:20.221982 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:20.819386 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:20.823631 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 08:04:20.217565 => 2023-02-22 08:04:20.823589
+[0m08:04:20.824271 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m08:04:20.987324 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fde009cec40>]}
+[0m08:04:20.987830 [info ] [Thread-1  ]: 7 of 8 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.77s]
+[0m08:04:20.988137 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m08:04:20.988404 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m08:04:20.988640 [info ] [Thread-1  ]: 8 of 8 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m08:04:20.989185 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m08:04:20.989387 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m08:04:20.991987 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m08:04:20.992590 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 08:04:20.989519 => 2023-02-22 08:04:20.992542
+[0m08:04:20.992787 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m08:04:20.995650 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m08:04:20.996802 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m08:04:20.997044 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m08:04:20.997219 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:21.967068 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:21.973843 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 08:04:20.992912 => 2023-02-22 08:04:21.973742
+[0m08:04:21.974217 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m08:04:22.109129 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7f03ab47-c3e2-4634-8480-facc37a7e48a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddc006fd60>]}
+[0m08:04:22.110387 [info ] [Thread-1  ]: 8 of 8 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 1.12s]
+[0m08:04:22.110952 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m08:04:22.112516 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:04:22.113331 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:04:22.113531 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m08:04:22.113778 [info ] [MainThread]: 
+[0m08:04:22.114071 [info ] [MainThread]: Finished running 4 view models, 4 table models in 0 hours 0 minutes and 12.29 seconds (12.29s).
+[0m08:04:22.114595 [debug] [MainThread]: Command end result
+[0m08:04:22.155155 [info ] [MainThread]: 
+[0m08:04:22.155938 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m08:04:22.156269 [info ] [MainThread]: 
+[0m08:04:22.156538 [error] [MainThread]: [33mDatabase Error in model fct_seller (models/marts/fct_seller.sql)[0m
+[0m08:04:22.156763 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:04:22.156968 [error] [MainThread]:   syntax error line 4 at position 4 unexpected '#n'.
+[0m08:04:22.157163 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:04:22.157366 [info ] [MainThread]: 
+[0m08:04:22.157646 [error] [MainThread]: [33mDatabase Error in model fct_orders (models/marts/fct_orders.sql)[0m
+[0m08:04:22.158048 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:04:22.158270 [error] [MainThread]:   syntax error line 33 at position 4 unexpected 'from'.
+[0m08:04:22.158468 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:04:22.158681 [info ] [MainThread]: 
+[0m08:04:22.158915 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=2 SKIP=0 TOTAL=8
+[0m08:04:22.159252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fddc006fd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0a6a7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdde0a6a0a0>]}
+[0m08:04:22.159512 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 08:04:39.608016 | a7eca05e-0898-4ef7-b418-8d4bd2abfb13 ==============================
+[0m08:04:39.608016 [info ] [MainThread]: Running with dbt=1.4.1
+[0m08:04:39.613306 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:04:39.613586 [debug] [MainThread]: Tracking: tracking
+[0m08:04:39.614375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81bbd5f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81bbd5fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81bbd5fbb0>]}
+[0m08:04:39.737751 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:04:39.739231 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/marts/fct_orders.sql
+[0m08:04:39.759535 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m08:04:39.808734 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m08:04:39.831591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81bc2020d0>]}
+[0m08:04:39.927558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8198541130>]}
+[0m08:04:39.927960 [info ] [MainThread]: Found 8 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m08:04:39.928204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81986105e0>]}
+[0m08:04:39.939644 [info ] [MainThread]: 
+[0m08:04:39.941087 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:04:39.942189 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m08:04:39.952485 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m08:04:39.952914 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m08:04:39.953267 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:04:41.146439 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m08:04:41.150164 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m08:04:41.382463 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m08:04:41.389115 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m08:04:41.389680 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m08:04:41.389975 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:04:42.235865 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m08:04:42.240945 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m08:04:42.390423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81bbe9dfd0>]}
+[0m08:04:42.391218 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m08:04:42.391457 [info ] [MainThread]: 
+[0m08:04:42.396051 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_seller
+[0m08:04:42.396512 [info ] [Thread-1  ]: 1 of 8 START sql view model WORKSPACE_35314553.fct_seller ...................... [RUN]
+[0m08:04:42.397203 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_seller'
+[0m08:04:42.397460 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_seller
+[0m08:04:42.398944 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_seller"
+[0m08:04:42.399443 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (compile): 2023-02-22 08:04:42.397645 => 2023-02-22 08:04:42.399377
+[0m08:04:42.399695 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_seller
+[0m08:04:42.423259 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_seller"
+[0m08:04:42.424071 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_seller"
+[0m08:04:42.424265 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_seller"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_seller
+  
+   as (
+    #number of orders per seller?
+  );
+[0m08:04:42.424422 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:42.961043 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f24-0101-c319-0000-5d493a1f1526
+[0m08:04:42.961359 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 4 at position 4 unexpected '#n'.
+[0m08:04:42.961813 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (execute): 2023-02-22 08:04:42.399861 => 2023-02-22 08:04:42.961767
+[0m08:04:42.961999 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: Close
+[0m08:04:43.119121 [debug] [Thread-1  ]: Database Error in model fct_seller (models/marts/fct_seller.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected '#n'.
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:04:43.119539 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188adba60>]}
+[0m08:04:43.120073 [error] [Thread-1  ]: 1 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_seller ............. [[31mERROR[0m in 0.72s]
+[0m08:04:43.121257 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_seller
+[0m08:04:43.121542 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m08:04:43.121923 [info ] [Thread-1  ]: 2 of 8 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m08:04:43.122426 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m08:04:43.122615 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m08:04:43.126623 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:43.127202 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 08:04:43.122752 => 2023-02-22 08:04:43.127154
+[0m08:04:43.127416 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m08:04:43.144851 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:43.145647 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m08:04:43.145806 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m08:04:43.145948 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:45.607301 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:04:45.631516 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 08:04:43.127552 => 2023-02-22 08:04:45.631471
+[0m08:04:45.631804 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m08:04:45.783344 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188948dc0>]}
+[0m08:04:45.783919 [info ] [Thread-1  ]: 2 of 8 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 2.66s]
+[0m08:04:45.784236 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m08:04:45.784552 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m08:04:45.784818 [info ] [Thread-1  ]: 3 of 8 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m08:04:45.785384 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m08:04:45.785580 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m08:04:45.787979 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m08:04:45.788666 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 08:04:45.785713 => 2023-02-22 08:04:45.788620
+[0m08:04:45.788864 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m08:04:45.791093 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m08:04:45.791975 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m08:04:45.792209 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m08:04:45.792395 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:48.273999 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:04:48.279957 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 08:04:45.788993 => 2023-02-22 08:04:48.279862
+[0m08:04:48.280287 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m08:04:48.527259 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188adba60>]}
+[0m08:04:48.527832 [info ] [Thread-1  ]: 3 of 8 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 2.74s]
+[0m08:04:48.528149 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m08:04:48.528680 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m08:04:48.528912 [info ] [Thread-1  ]: 4 of 8 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m08:04:48.529572 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m08:04:48.529772 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m08:04:48.532456 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m08:04:48.533246 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 08:04:48.529905 => 2023-02-22 08:04:48.533193
+[0m08:04:48.533478 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m08:04:48.535587 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m08:04:48.536648 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m08:04:48.536878 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m08:04:48.537074 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:49.788007 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:49.793883 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 08:04:48.533641 => 2023-02-22 08:04:49.793834
+[0m08:04:49.794177 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m08:04:49.936168 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188adb370>]}
+[0m08:04:49.936700 [info ] [Thread-1  ]: 4 of 8 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.41s]
+[0m08:04:49.937016 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m08:04:49.937286 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_sellers
+[0m08:04:49.937807 [info ] [Thread-1  ]: 5 of 8 START sql table model WORKSPACE_35314553.stg_sellers .................... [RUN]
+[0m08:04:49.939191 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_sellers'
+[0m08:04:49.939459 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_sellers
+[0m08:04:49.943486 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:49.943974 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (compile): 2023-02-22 08:04:49.939629 => 2023-02-22 08:04:49.943930
+[0m08:04:49.944171 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_sellers
+[0m08:04:49.946663 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:49.947517 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_sellers"
+[0m08:04:49.947702 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_sellers"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_sellers  as
+        (
+
+select
+    "seller_id" as "seller_fk",
+    "seller_city",
+    "seller_state" 
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_sellers_dataset"
+        );
+[0m08:04:49.947853 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:50.975698 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:50.980925 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (execute): 2023-02-22 08:04:49.944302 => 2023-02-22 08:04:50.980790
+[0m08:04:50.981457 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: Close
+[0m08:04:51.112392 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a82b6d30>]}
+[0m08:04:51.113038 [info ] [Thread-1  ]: 5 of 8 OK created sql table model WORKSPACE_35314553.stg_sellers ............... [[32mSUCCESS 1[0m in 1.17s]
+[0m08:04:51.113424 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_sellers
+[0m08:04:51.113767 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m08:04:51.114139 [info ] [Thread-1  ]: 6 of 8 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m08:04:51.114755 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m08:04:51.114979 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m08:04:51.117620 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m08:04:51.118247 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 08:04:51.115116 => 2023-02-22 08:04:51.118191
+[0m08:04:51.118462 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m08:04:51.121751 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m08:04:51.123296 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m08:04:51.123558 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantitiy"
+
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m08:04:51.123723 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:51.679999 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f24-0101-c314-0000-5d493a1f23be
+[0m08:04:51.680987 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 31 at position 8
+invalid identifier '"product_quantitiy"'
+[0m08:04:51.681883 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 08:04:51.118591 => 2023-02-22 08:04:51.681760
+[0m08:04:51.682500 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m08:04:51.814838 [debug] [Thread-1  ]: Database Error in model fct_orders (models/marts/fct_orders.sql)
+  000904 (42000): SQL compilation error: error line 31 at position 8
+  invalid identifier '"product_quantitiy"'
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:04:51.816012 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188b61c10>]}
+[0m08:04:51.816450 [error] [Thread-1  ]: 6 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_orders ............. [[31mERROR[0m in 0.70s]
+[0m08:04:51.816823 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m08:04:51.817115 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m08:04:51.817540 [info ] [Thread-1  ]: 7 of 8 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m08:04:51.818093 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m08:04:51.818282 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m08:04:51.820557 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m08:04:51.821043 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 08:04:51.818419 => 2023-02-22 08:04:51.820999
+[0m08:04:51.821231 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m08:04:51.823858 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m08:04:51.824702 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m08:04:51.824936 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m08:04:51.825109 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:52.477133 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:52.479035 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 08:04:51.821359 => 2023-02-22 08:04:52.478998
+[0m08:04:52.479225 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m08:04:52.628599 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81a81d22b0>]}
+[0m08:04:52.629795 [info ] [Thread-1  ]: 7 of 8 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.81s]
+[0m08:04:52.630115 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m08:04:52.630393 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m08:04:52.630619 [info ] [Thread-1  ]: 8 of 8 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m08:04:52.631264 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m08:04:52.631467 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m08:04:52.634040 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m08:04:52.634575 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 08:04:52.631599 => 2023-02-22 08:04:52.634528
+[0m08:04:52.634787 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m08:04:52.637911 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m08:04:52.639000 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m08:04:52.639221 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m08:04:52.639376 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:04:53.406124 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:04:53.411536 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 08:04:52.634927 => 2023-02-22 08:04:53.411480
+[0m08:04:53.411789 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m08:04:53.556261 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a7eca05e-0898-4ef7-b418-8d4bd2abfb13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188b6c190>]}
+[0m08:04:53.556865 [info ] [Thread-1  ]: 8 of 8 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 0.93s]
+[0m08:04:53.557239 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m08:04:53.558579 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:04:53.559271 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:04:53.559472 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m08:04:53.559752 [info ] [MainThread]: 
+[0m08:04:53.560103 [info ] [MainThread]: Finished running 4 view models, 4 table models in 0 hours 0 minutes and 13.62 seconds (13.62s).
+[0m08:04:53.560877 [debug] [MainThread]: Command end result
+[0m08:04:53.594292 [info ] [MainThread]: 
+[0m08:04:53.595025 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m08:04:53.595760 [info ] [MainThread]: 
+[0m08:04:53.596160 [error] [MainThread]: [33mDatabase Error in model fct_seller (models/marts/fct_seller.sql)[0m
+[0m08:04:53.596376 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:04:53.596577 [error] [MainThread]:   syntax error line 4 at position 4 unexpected '#n'.
+[0m08:04:53.596768 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:04:53.596965 [info ] [MainThread]: 
+[0m08:04:53.597274 [error] [MainThread]: [33mDatabase Error in model fct_orders (models/marts/fct_orders.sql)[0m
+[0m08:04:53.597631 [error] [MainThread]:   000904 (42000): SQL compilation error: error line 31 at position 8
+[0m08:04:53.597947 [error] [MainThread]:   invalid identifier '"product_quantitiy"'
+[0m08:04:53.598393 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_orders.sql
+[0m08:04:53.599430 [info ] [MainThread]: 
+[0m08:04:53.599995 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=2 SKIP=0 TOTAL=8
+[0m08:04:53.601246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f81985412b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8198541250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8188b7e7c0>]}
+[0m08:04:53.601756 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-22 08:05:31.964734 | 8c32542c-fdd8-4853-8fcb-9d67e63d3fb7 ==============================
+[0m08:05:31.964734 [info ] [MainThread]: Running with dbt=1.4.1
+[0m08:05:31.966642 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/kritiga/Documents/kbc/keboola_dbt_olist/keboola_dbt_olist', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'target': 'keboola_dbt_olist', 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:05:31.966910 [debug] [MainThread]: Tracking: tracking
+[0m08:05:31.967364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9008217100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9008217ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9008217bb0>]}
+[0m08:05:32.095884 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m08:05:32.097612 [debug] [MainThread]: Partial parsing: updated file: keboola_dbt_olist://models/marts/fct_orders.sql
+[0m08:05:32.114533 [debug] [MainThread]: 1699: static parser successfully parsed marts/fct_orders.sql
+[0m08:05:32.178951 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.keboola_dbt_olist.example
+[0m08:05:32.192679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90088ab0d0>]}
+[0m08:05:32.298166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90086d1190>]}
+[0m08:05:32.298570 [info ] [MainThread]: Found 8 models, 481 tests, 0 snapshots, 0 analyses, 304 macros, 0 operations, 0 seed files, 175 sources, 0 exposures, 0 metrics
+[0m08:05:32.298815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902c184be0>]}
+[0m08:05:32.312320 [info ] [MainThread]: 
+[0m08:05:32.314525 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:05:32.316678 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167'
+[0m08:05:32.328252 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167"
+[0m08:05:32.328545 [debug] [ThreadPool]: On list_KEBOOLA_7167: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167"} */
+show terse schemas in database KEBOOLA_7167
+    limit 10000
+[0m08:05:32.328721 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:05:33.086945 [debug] [ThreadPool]: SQL status: SUCCESS 39 in 1 seconds
+[0m08:05:33.090394 [debug] [ThreadPool]: On list_KEBOOLA_7167: Close
+[0m08:05:33.225786 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_KEBOOLA_7167_WORKSPACE_35314553'
+[0m08:05:33.231661 [debug] [ThreadPool]: Using snowflake connection "list_KEBOOLA_7167_WORKSPACE_35314553"
+[0m08:05:33.231963 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "connection_name": "list_KEBOOLA_7167_WORKSPACE_35314553"} */
+show terse objects in KEBOOLA_7167.WORKSPACE_35314553
+[0m08:05:33.232148 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m08:05:33.970897 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1 seconds
+[0m08:05:33.974601 [debug] [ThreadPool]: On list_KEBOOLA_7167_WORKSPACE_35314553: Close
+[0m08:05:34.112521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902c2b4c10>]}
+[0m08:05:34.113379 [info ] [MainThread]: Concurrency: 1 threads (target='keboola_dbt_olist')
+[0m08:05:34.114021 [info ] [MainThread]: 
+[0m08:05:34.119778 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_seller
+[0m08:05:34.120195 [info ] [Thread-1  ]: 1 of 8 START sql view model WORKSPACE_35314553.fct_seller ...................... [RUN]
+[0m08:05:34.120836 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_seller'
+[0m08:05:34.121099 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_seller
+[0m08:05:34.122917 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_seller"
+[0m08:05:34.123756 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (compile): 2023-02-22 08:05:34.121288 => 2023-02-22 08:05:34.123651
+[0m08:05:34.123997 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_seller
+[0m08:05:34.148764 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_seller"
+[0m08:05:34.149737 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_seller"
+[0m08:05:34.149900 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_seller"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_seller
+  
+   as (
+    #number of orders per seller?
+  );
+[0m08:05:34.150042 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:34.693459 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01aa7f25-0101-c314-0000-5d493a1f2732
+[0m08:05:34.693776 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 4 at position 4 unexpected '#n'.
+[0m08:05:34.694275 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_seller (execute): 2023-02-22 08:05:34.124137 => 2023-02-22 08:05:34.694211
+[0m08:05:34.694491 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_seller: Close
+[0m08:05:34.836293 [debug] [Thread-1  ]: Database Error in model fct_seller (models/marts/fct_seller.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 4 at position 4 unexpected '#n'.
+  compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:05:34.837292 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902c55d730>]}
+[0m08:05:34.838062 [error] [Thread-1  ]: 1 of 8 ERROR creating sql view model WORKSPACE_35314553.fct_seller ............. [[31mERROR[0m in 0.72s]
+[0m08:05:34.839361 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_seller
+[0m08:05:34.839654 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_order_items
+[0m08:05:34.840193 [info ] [Thread-1  ]: 2 of 8 START sql table model WORKSPACE_35314553.stg_order_items ................ [RUN]
+[0m08:05:34.841311 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_order_items'
+[0m08:05:34.841668 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_order_items
+[0m08:05:34.846496 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:05:34.847103 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (compile): 2023-02-22 08:05:34.841852 => 2023-02-22 08:05:34.847044
+[0m08:05:34.847360 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_order_items
+[0m08:05:34.865493 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_order_items"
+[0m08:05:34.866287 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_order_items"
+[0m08:05:34.866473 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_order_items"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_order_items  as
+        (
+
+select
+    "order_id" as "order_fk",
+    "order_item_id",
+    "product_id" as "product_fk",
+    "seller_id" as "seller_fk",
+    "shipping_limit_date",
+    "price",
+    "freight_value"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_order_items_dataset"
+        );
+[0m08:05:34.866633 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:36.756687 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2 seconds
+[0m08:05:36.783625 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_order_items (execute): 2023-02-22 08:05:34.847507 => 2023-02-22 08:05:36.783569
+[0m08:05:36.783908 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_order_items: Close
+[0m08:05:36.909324 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f900895a4c0>]}
+[0m08:05:36.910489 [info ] [Thread-1  ]: 2 of 8 OK created sql table model WORKSPACE_35314553.stg_order_items ........... [[32mSUCCESS 1[0m in 2.07s]
+[0m08:05:36.910921 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_order_items
+[0m08:05:36.911262 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_orders
+[0m08:05:36.911748 [info ] [Thread-1  ]: 3 of 8 START sql table model WORKSPACE_35314553.stg_orders ..................... [RUN]
+[0m08:05:36.912732 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_orders'
+[0m08:05:36.912969 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_orders
+[0m08:05:36.915617 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_orders"
+[0m08:05:36.916716 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (compile): 2023-02-22 08:05:36.913112 => 2023-02-22 08:05:36.916637
+[0m08:05:36.917000 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_orders
+[0m08:05:36.919775 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_orders"
+[0m08:05:36.920905 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_orders"
+[0m08:05:36.921283 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_orders"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_orders  as
+        (
+
+select
+    "order_id" as "order_pk",
+    "customer_id" as "customer_fk",
+    "order_status",
+    "order_purchase_timestamp",
+    "order_approved_at",
+    "order_delivered_carrier_date",
+    "order_delivered_customer_date",
+    "order_estimated_delivery_date"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_orders_dataset"
+        );
+[0m08:05:36.921463 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:39.519618 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3 seconds
+[0m08:05:39.522174 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_orders (execute): 2023-02-22 08:05:36.917174 => 2023-02-22 08:05:39.522129
+[0m08:05:39.522416 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_orders: Close
+[0m08:05:39.654292 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902c55daf0>]}
+[0m08:05:39.654798 [info ] [Thread-1  ]: 3 of 8 OK created sql table model WORKSPACE_35314553.stg_orders ................ [[32mSUCCESS 1[0m in 2.74s]
+[0m08:05:39.655099 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_orders
+[0m08:05:39.655365 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_products
+[0m08:05:39.655688 [info ] [Thread-1  ]: 4 of 8 START sql table model WORKSPACE_35314553.stg_products ................... [RUN]
+[0m08:05:39.656297 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_products'
+[0m08:05:39.656514 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_products
+[0m08:05:39.659202 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_products"
+[0m08:05:39.659819 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (compile): 2023-02-22 08:05:39.656662 => 2023-02-22 08:05:39.659765
+[0m08:05:39.660067 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_products
+[0m08:05:39.662896 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_products"
+[0m08:05:39.664005 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_products"
+[0m08:05:39.664222 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_products"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_products  as
+        (
+
+select
+    "product_id" as "product_pk",
+    "product_category_name",
+    "product_name_lenght",
+    "product_description_lenght",
+    "product_photos_qty",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_products_dataset"
+        );
+[0m08:05:39.664392 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:40.718943 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:05:40.729469 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_products (execute): 2023-02-22 08:05:39.660236 => 2023-02-22 08:05:40.729307
+[0m08:05:40.729912 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_products: Close
+[0m08:05:40.969540 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9018699a30>]}
+[0m08:05:40.970890 [info ] [Thread-1  ]: 4 of 8 OK created sql table model WORKSPACE_35314553.stg_products .............. [[32mSUCCESS 1[0m in 1.31s]
+[0m08:05:40.971303 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_products
+[0m08:05:40.971652 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.stg_sellers
+[0m08:05:40.972168 [info ] [Thread-1  ]: 5 of 8 START sql table model WORKSPACE_35314553.stg_sellers .................... [RUN]
+[0m08:05:40.972701 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.stg_sellers'
+[0m08:05:40.972890 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.stg_sellers
+[0m08:05:40.976594 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:05:40.977520 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (compile): 2023-02-22 08:05:40.973026 => 2023-02-22 08:05:40.977460
+[0m08:05:40.977742 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.stg_sellers
+[0m08:05:40.980127 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.stg_sellers"
+[0m08:05:40.981012 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.stg_sellers"
+[0m08:05:40.981192 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.stg_sellers"} */
+create or replace transient table KEBOOLA_7167.WORKSPACE_35314553.stg_sellers  as
+        (
+
+select
+    "seller_id" as "seller_fk",
+    "seller_city",
+    "seller_state" 
+from
+    "KEBOOLA_7167"."in.c-data_import"."olist_sellers_dataset"
+        );
+[0m08:05:40.981353 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:42.007187 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:05:42.012459 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.stg_sellers (execute): 2023-02-22 08:05:40.977882 => 2023-02-22 08:05:42.012386
+[0m08:05:42.012760 [debug] [Thread-1  ]: On model.keboola_dbt_olist.stg_sellers: Close
+[0m08:05:42.145511 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90186be070>]}
+[0m08:05:42.146897 [info ] [Thread-1  ]: 5 of 8 OK created sql table model WORKSPACE_35314553.stg_sellers ............... [[32mSUCCESS 1[0m in 1.17s]
+[0m08:05:42.147738 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.stg_sellers
+[0m08:05:42.148080 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.fct_orders
+[0m08:05:42.148627 [info ] [Thread-1  ]: 6 of 8 START sql view model WORKSPACE_35314553.fct_orders ...................... [RUN]
+[0m08:05:42.149227 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.fct_orders'
+[0m08:05:42.149495 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.fct_orders
+[0m08:05:42.152236 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.fct_orders"
+[0m08:05:42.153016 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (compile): 2023-02-22 08:05:42.149657 => 2023-02-22 08:05:42.152951
+[0m08:05:42.153258 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.fct_orders
+[0m08:05:42.156502 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.fct_orders"
+[0m08:05:42.158201 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.fct_orders"
+[0m08:05:42.158521 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.fct_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.fct_orders
+  
+   as (
+    with stg_order_items as (
+    select
+        *,
+        "order_fk" || '-' || "product_fk" as "order_product_sk"
+    from
+        KEBOOLA_7167.WORKSPACE_35314553.stg_order_items
+),
+items_by_order as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        SUM("freight_value") as "order_freight_value",
+        MAX("order_item_id") as "product_quantity"
+    from
+        stg_order_items
+    group by
+        "order_fk", "product_fk", "price", "order_product_sk"
+),
+items_by_order_with_order_value as (
+    select
+        "order_fk",
+        "product_fk",
+        "order_product_sk",
+        "price",
+        "order_freight_value",
+        "product_quantity",
+        "price" * "product_quantity" as "order_value_without_freight",
+        ("price" * "product_quantity") + "order_freight_value" as "order_value_with_freight"
+
+    from
+        items_by_order
+)
+select
+    *
+from
+    items_by_order_with_order_value
+  );
+[0m08:05:42.158708 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:42.745393 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:05:42.751272 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.fct_orders (execute): 2023-02-22 08:05:42.153420 => 2023-02-22 08:05:42.751211
+[0m08:05:42.751580 [debug] [Thread-1  ]: On model.keboola_dbt_olist.fct_orders: Close
+[0m08:05:42.905679 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90186be460>]}
+[0m08:05:42.907205 [info ] [Thread-1  ]: 6 of 8 OK created sql view model WORKSPACE_35314553.fct_orders ................. [[32mSUCCESS 1[0m in 0.76s]
+[0m08:05:42.907861 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.fct_orders
+[0m08:05:42.908235 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_orders
+[0m08:05:42.908560 [info ] [Thread-1  ]: 7 of 8 START sql view model WORKSPACE_35314553.dim_orders ...................... [RUN]
+[0m08:05:42.909101 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_orders'
+[0m08:05:42.909301 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_orders
+[0m08:05:42.912564 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_orders"
+[0m08:05:42.913197 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (compile): 2023-02-22 08:05:42.909510 => 2023-02-22 08:05:42.913135
+[0m08:05:42.913432 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_orders
+[0m08:05:42.917069 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_orders"
+[0m08:05:42.917879 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_orders"
+[0m08:05:42.918052 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_orders"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_orders
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_orders
+  );
+[0m08:05:42.918218 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:43.641077 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:05:43.647287 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_orders (execute): 2023-02-22 08:05:42.913599 => 2023-02-22 08:05:43.647234
+[0m08:05:43.647633 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_orders: Close
+[0m08:05:43.794958 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ff8779eb0>]}
+[0m08:05:43.796004 [info ] [Thread-1  ]: 7 of 8 OK created sql view model WORKSPACE_35314553.dim_orders ................. [[32mSUCCESS 1[0m in 0.89s]
+[0m08:05:43.796431 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_orders
+[0m08:05:43.796724 [debug] [Thread-1  ]: Began running node model.keboola_dbt_olist.dim_products
+[0m08:05:43.797121 [info ] [Thread-1  ]: 8 of 8 START sql view model WORKSPACE_35314553.dim_products .................... [RUN]
+[0m08:05:43.797715 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.keboola_dbt_olist.dim_products'
+[0m08:05:43.797918 [debug] [Thread-1  ]: Began compiling node model.keboola_dbt_olist.dim_products
+[0m08:05:43.800680 [debug] [Thread-1  ]: Writing injected SQL for node "model.keboola_dbt_olist.dim_products"
+[0m08:05:43.801281 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (compile): 2023-02-22 08:05:43.798053 => 2023-02-22 08:05:43.801220
+[0m08:05:43.801514 [debug] [Thread-1  ]: Began executing node model.keboola_dbt_olist.dim_products
+[0m08:05:43.804272 [debug] [Thread-1  ]: Writing runtime sql for node "model.keboola_dbt_olist.dim_products"
+[0m08:05:43.805078 [debug] [Thread-1  ]: Using snowflake connection "model.keboola_dbt_olist.dim_products"
+[0m08:05:43.805299 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: /* {"app": "dbt", "dbt_version": "1.4.1", "profile_name": "keboola_dbt_olist", "target_name": "keboola_dbt_olist", "node_id": "model.keboola_dbt_olist.dim_products"} */
+create or replace   view KEBOOLA_7167.WORKSPACE_35314553.dim_products
+  
+   as (
+    select
+    *
+from
+    KEBOOLA_7167.WORKSPACE_35314553.stg_products
+  );
+[0m08:05:43.805461 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m08:05:44.528390 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m08:05:44.530616 [debug] [Thread-1  ]: Timing info for model.keboola_dbt_olist.dim_products (execute): 2023-02-22 08:05:43.801662 => 2023-02-22 08:05:44.530554
+[0m08:05:44.530962 [debug] [Thread-1  ]: On model.keboola_dbt_olist.dim_products: Close
+[0m08:05:44.681558 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c32542c-fdd8-4853-8fcb-9d67e63d3fb7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90186be070>]}
+[0m08:05:44.682232 [info ] [Thread-1  ]: 8 of 8 OK created sql view model WORKSPACE_35314553.dim_products ............... [[32mSUCCESS 1[0m in 0.88s]
+[0m08:05:44.682648 [debug] [Thread-1  ]: Finished running node model.keboola_dbt_olist.dim_products
+[0m08:05:44.684404 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m08:05:44.685289 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:05:44.685504 [debug] [MainThread]: Connection 'model.keboola_dbt_olist.dim_products' was properly closed.
+[0m08:05:44.685815 [info ] [MainThread]: 
+[0m08:05:44.686169 [info ] [MainThread]: Finished running 4 view models, 4 table models in 0 hours 0 minutes and 12.37 seconds (12.37s).
+[0m08:05:44.686828 [debug] [MainThread]: Command end result
+[0m08:05:44.721591 [info ] [MainThread]: 
+[0m08:05:44.722033 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m08:05:44.722274 [info ] [MainThread]: 
+[0m08:05:44.722503 [error] [MainThread]: [33mDatabase Error in model fct_seller (models/marts/fct_seller.sql)[0m
+[0m08:05:44.722716 [error] [MainThread]:   001003 (42000): SQL compilation error:
+[0m08:05:44.723056 [error] [MainThread]:   syntax error line 4 at position 4 unexpected '#n'.
+[0m08:05:44.723271 [error] [MainThread]:   compiled Code at target/run/keboola_dbt_olist/models/marts/fct_seller.sql
+[0m08:05:44.723544 [info ] [MainThread]: 
+[0m08:05:44.723868 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m08:05:44.724272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90086d1310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90186be460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f90087a15b0>]}
+[0m08:05:44.724537 [debug] [MainThread]: Flushing usage events
