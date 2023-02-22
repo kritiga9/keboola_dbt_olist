@@ -26,7 +26,7 @@ models:
             description: "The key for the order. Its not unique because one order can have more than onde product."
             tests:
                 - not_null
-          - name: product_fk
+          - name: "product_fk"
             description: "The key for the product"
             tests:
                 - not_null
