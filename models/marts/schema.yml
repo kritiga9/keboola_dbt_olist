@@ -4,7 +4,7 @@ models:
     - name: fct_orders
       description: "A table with all products and its primary key"
       columns:
-          - name: order_product_sk
+          - name: "order_product_sk"
             description: "The primary key for this table"
             tests:
                 - unique
