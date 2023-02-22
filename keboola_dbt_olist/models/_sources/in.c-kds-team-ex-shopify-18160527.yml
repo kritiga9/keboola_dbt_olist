@@ -1,0 +1,145 @@
+version: 2
+sources:
+    - name: in.c-kds-team-ex-shopify-18160527
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.c-kds-team-ex-shopify-18160527
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: customer
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: customer_addresses
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"customer_id"'
+              tests:
+                - unique
+                - not_null
+        - name: inventory_items
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: inventory_levels
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"inventory_item_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"location_id"'
+              tests:
+                - unique
+                - not_null
+        - name: line_item
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"order_id"'
+              tests:
+                - unique
+                - not_null
+        - name: locations
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: order
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: product
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: product_images
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"product_id"'
+              tests:
+                - unique
+                - not_null
+        - name: product_options
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"product_id"'
+              tests:
+                - unique
+                - not_null
+        - name: product_variant
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"product_id"'
+              tests:
+                - unique
+                - not_null

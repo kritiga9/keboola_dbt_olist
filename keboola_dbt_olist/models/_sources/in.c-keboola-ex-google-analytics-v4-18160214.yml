@@ -1,0 +1,31 @@
+version: 2
+sources:
+    - name: in.c-keboola-ex-google-analytics-v4-18160214
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.c-keboola-ex-google-analytics-v4-18160214
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: google-analytics-report
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: profiles
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null

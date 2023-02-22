@@ -1,0 +1,12 @@
+send_anonymous_usage_stats: false
+keboola_dbt_olist:
+    target: keboola_dbt_olist
+    outputs:
+        keboola_dbt_olist:
+            account: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_ACCOUNT") }}'
+            database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+            password: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_PASSWORD") }}'
+            schema: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_SCHEMA") }}'
+            type: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_TYPE") }}'
+            user: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_USER") }}'
+            warehouse: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_WAREHOUSE") }}'

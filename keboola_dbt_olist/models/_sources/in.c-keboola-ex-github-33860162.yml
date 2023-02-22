@@ -1,0 +1,163 @@
+version: 2
+sources:
+    - name: in.c-keboola-ex-github-33860162
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.c-keboola-ex-github-33860162
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: commits
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"sha"'
+              tests:
+                - unique
+                - not_null
+        - name: issues
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: issue_comments
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: issue_labels
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"color"'
+              tests:
+                - unique
+                - not_null
+            - name: '"name"'
+              tests:
+                - unique
+                - not_null
+            - name: '"issues_pk"'
+              tests:
+                - unique
+                - not_null
+        - name: members
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: members_detail
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: organizations
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"org_name"'
+              tests:
+                - unique
+                - not_null
+        - name: pulls
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: pulls_reviewers
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"pulls_pk"'
+              tests:
+                - unique
+                - not_null
+        - name: pull_comments
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: pull_issue_comments
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: pull_reviews
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: repos
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: teams
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null

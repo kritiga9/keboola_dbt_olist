@@ -1,0 +1,21 @@
+version: 2
+sources:
+    - name: out.c-kds-team-ex-jira-21587860
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: out.c-kds-team-ex-jira-21587860
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: projects_96bca0_snapshot
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"snapshot_pk"'
+              tests:
+                - unique
+                - not_null

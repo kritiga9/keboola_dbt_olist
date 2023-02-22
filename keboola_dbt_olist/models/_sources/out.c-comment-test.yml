@@ -1,0 +1,21 @@
+version: 2
+sources:
+    - name: out.c-comment-test
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: out.c-comment-test
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: test_comment
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"row_id"'
+              tests:
+                - unique
+                - not_null

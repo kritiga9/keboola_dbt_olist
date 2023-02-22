@@ -1,0 +1,23 @@
+version: 2
+sources:
+    - name: in.test
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.test
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: table_freshness
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []
+        - name: table_updates
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns: []

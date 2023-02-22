@@ -1,0 +1,53 @@
+version: 2
+sources:
+    - name: in.c-jira-raw-snapshot
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.c-jira-raw-snapshot
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: issues
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"snapshot_date"'
+              tests:
+                - unique
+                - not_null
+        - name: projects
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"snapshot_date"'
+              tests:
+                - unique
+                - not_null
+        - name: worklogs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"snapshot_date"'
+              tests:
+                - unique
+                - not_null

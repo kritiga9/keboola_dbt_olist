@@ -1,0 +1,525 @@
+version: 2
+sources:
+    - name: in.c-kds-team-ex-kbc-project-metadata-v2-19901574
+      freshness:
+        warn_after:
+            count: 1
+            period: day
+      database: '{{ env_var("DBT_KBC_KEBOOLA_DBT_OLIST_DATABASE") }}'
+      schema: in.c-kds-team-ex-kbc-project-metadata-v2-19901574
+      loaded_at_field: '"_timestamp"'
+      tables:
+        - name: configurations
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+        - name: orchestrations
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+        - name: orchestrations-notifications
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"orchestration_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"email"'
+              tests:
+                - unique
+                - not_null
+            - name: '"channel"'
+              tests:
+                - unique
+                - not_null
+        - name: orchestrations-tasks
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+        - name: storage_buckets
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+        - name: tables
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: tables-columns
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"table_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"column"'
+              tests:
+                - unique
+                - not_null
+        - name: tables-columns-metadata
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+        - name: tables-load-events
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: tables-metadata
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"table_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-buckets
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-inputs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"source"'
+              tests:
+                - unique
+                - not_null
+            - name: '"destination"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-inputs-metadata
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"source"'
+              tests:
+                - unique
+                - not_null
+            - name: '"destination"'
+              tests:
+                - unique
+                - not_null
+            - name: '"column"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-outputs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"destination"'
+              tests:
+                - unique
+                - not_null
+            - name: '"source"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-queries
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"query_index"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-v2
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"component_id"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-v2-codes
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"component_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"block_index"'
+              tests:
+                - unique
+                - not_null
+            - name: '"code_index"'
+              tests:
+                - unique
+                - not_null
+            - name: '"script_index"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-v2-inputs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"component_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"source"'
+              tests:
+                - unique
+                - not_null
+            - name: '"destination"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-v2-inputs-metadata
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"component_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"table_source"'
+              tests:
+                - unique
+                - not_null
+            - name: '"table_destination"'
+              tests:
+                - unique
+                - not_null
+            - name: '"column"'
+              tests:
+                - unique
+                - not_null
+        - name: transformations-v2-outputs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"transformation_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"component_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"source"'
+              tests:
+                - unique
+                - not_null
+            - name: '"destination"'
+              tests:
+                - unique
+                - not_null
+        - name: triggers
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: triggers-tables
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"trigger_id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
+        - name: waiting-jobs
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+        - name: workspace-table-loads
+          quoting:
+            database: true
+            schema: true
+            identifier: true
+          columns:
+            - name: '"id"'
+              tests:
+                - unique
+                - not_null
+            - name: '"region"'
+              tests:
+                - unique
+                - not_null
+            - name: '"project_id"'
+              tests:
+                - unique
+                - not_null
